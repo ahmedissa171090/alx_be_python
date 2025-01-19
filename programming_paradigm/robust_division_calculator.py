@@ -18,7 +18,9 @@ def safe_divide(numerator, denominator):
         
         # Perform division
         result = num / denom
-        return f"The result of the division is {result:.2f}"
+        
+        # Format result with one decimal place if necessary
+        return f"The result of the division is {result:.1f}"
     
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
